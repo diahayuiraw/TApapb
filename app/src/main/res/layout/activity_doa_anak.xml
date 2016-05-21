@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/nav_doa"
+        android:background="@color/hijau"
         android:orientation="vertical">
 
         <TextView
@@ -60,34 +60,37 @@
                         android:id="@+id/img_sebelum_makan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/sebelum_makan" />
 
                     <TextView
                         android:id="@+id/text_sebelum_makan"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="Doa Sebelum Makan"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/btn_sesudah_makan">
 
                     <ImageView
                         android:id="@+id/img_setelah_makan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/sesudah_makan" />
 
                     <TextView
                         android:id="@+id/text_setelah_makan"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="Doa Setelah Makan"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -103,40 +106,44 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="60dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/btn_sebelum_wudhu">
 
                     <ImageView
                         android:id="@+id/img_sebelum_wudhu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/sebelum_wudhu" />
 
                     <TextView
                         android:id="@+id/text_sebelum_wudhu"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="Doa Sebelum Wudhu"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/btn_sesudah_wudhu">
 
                     <ImageView
                         android:id="@+id/img_setelah_wudhu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/sesudah_wudhu" />
 
                     <TextView
                         android:id="@+id/text_setelah_wudhu"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="Doa Setelah Wudhu"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -152,40 +159,44 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="60dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/btn_sebelum_tidur">
 
                     <ImageView
                         android:id="@+id/img_sebelum_tidur"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/sebelum_tidur" />
 
                     <TextView
                         android:id="@+id/text_sebelum_tidur"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="Doa Sebelum Tidur"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/btn_sesudah_tidur">
 
                     <ImageView
                         android:id="@+id/img_setalah_tidur"
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/sesudah_tidur" />
 
                     <TextView
                         android:id="@+id/text_setelah_tidur"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="Doa Setelah Tidur"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:layout_marginTop="6dp"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -194,14 +205,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:id="@+id/btn_masuk_masjid">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="60dp"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/btn_keluar_rumah">
 
                     <ImageView
                         android:id="@+id/img_1"
@@ -221,7 +234,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/btn_masuk_rumah">
 
                     <ImageView
                         android:id="@+id/img_2"

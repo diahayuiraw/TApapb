@@ -10,17 +10,28 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout btnDoa;
+    LinearLayout btnPanduan;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnDoa = (LinearLayout) findViewById(R.id.btn_doa);
+        btnPanduan = (LinearLayout) findViewById(R.id.btn_panduan);
         
         btnDoa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "doa anak", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, DoaAnakActivity.class));
+            }
+        });
+
+        btnPanduan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "panduan", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, PanduanActivity.class));
             }
         });
     }

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DoaAnakActivity" />
-        <activity android:name=".DoaDetailActivity"></activity>
+        <activity android:name=".DoaDetailActivity" />
+        <activity android:name=".PanduanActivity"></activity>
     </application>
 
 </manifest>

@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/nav_doa"
+        android:background="@color/hijau"
         android:orientation="vertical">
 
         <TextView
@@ -46,7 +46,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/img_sebelum_makan"
+                android:id="@+id/img_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher" />
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_marginTop="100dp"
-        android:background="@color/nav_doa">
+        android:background="@color/hijau">
 
         <TextView
             android:layout_width="match_parent"
@@ -70,24 +70,36 @@
             android:textColor="#ffffff" />
 
         <ImageView
-            android:id="@+id/play"
+            android:id="@+id/btn_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="120dp"
-            android:src="@drawable/back" />
+            android:src="@drawable/back"
+            />
+
+<!--gone biar ilang,-->
+        <ImageView
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone"
+            />
 
     </RelativeLayout>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/makan"/>
+        android:id="@+id/image_arabic"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="36dp"
-        android:background="@color/nav_doa">
+        android:background="@color/hijau">
 
 
 
@@ -104,7 +116,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="testingiigiigigigigigigigigig" />
+        android:text="ini text"
+        android:id="@+id/text_arti"/>
 
 
 </LinearLayout>
