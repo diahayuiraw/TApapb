@@ -112,4 +112,10 @@ public class DoaDetailActivity extends AppCompatActivity {
             }
         });
 
-}}
+}
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+}

@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.papb.tapapb.DoaDetailActivity">
+    tools:context="com.example.papb.tapapb.DoaDetailActivity"
+    android:background="#ffffff">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,8 +25,8 @@
 
         <ImageView
             android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="140dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="16dp"
             android:src="@drawable/back" />

@@ -4,14 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.papb.tapapb.MainActivity">
+    tools:context="com.example.papb.tapapb.MainActivity"
+    android:background="#ffffff">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="@color/background_home"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:background="@color/background_home">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,7 +32,20 @@
             android:text="Panduan Belajar Agama untuk Anak"
             android:textColor="#ffffff" />
 
-    </LinearLayout>
+</LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/play"
+            android:layout_marginRight="16dp"
+            android:id="@+id/btn_Setting"
+
+            />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
