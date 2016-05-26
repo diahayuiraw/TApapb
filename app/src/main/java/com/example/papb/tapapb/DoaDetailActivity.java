@@ -16,6 +16,7 @@ public class DoaDetailActivity extends AppCompatActivity {
     TextView TextArti;
     ImageView btnBack;
     TextView TextArabic;
+    TextView TextHeader;
 
     int sound;
 
@@ -38,6 +39,7 @@ public class DoaDetailActivity extends AppCompatActivity {
         btnBack = (ImageView) findViewById(R.id.btn_back);
         ImgDetail = (ImageView) findViewById(R.id.img_detail);
         TextArabic = (TextView) findViewById(R.id.text_arabic);
+        TextHeader = (TextView) findViewById(R.id.text_header);
 
         Typeface tf = Typeface.createFromAsset(getAssets(), PathFont);
         TextArabic.setTypeface(tf);
@@ -53,30 +55,33 @@ public class DoaDetailActivity extends AppCompatActivity {
             TextArti.setText("Segala puji bagi Allah yang memberi kami makan dan minum serta menjadikan kami memeluk agama islam");
             //ImageArabic.setImageResource(R.drawable.makan);
             ImgDetail.setImageResource(R.drawable.sesudah_makan);
-            sound = R.raw.doa_sesudah_makan;
+            sound = R.raw.doa_sebelum_makan;
             TextArabic.setText("اَلْحَمْدُ ِللهِ الَّذِيْنَ اَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مِنَ الْمُسْلِمِيْنَ");
+            TextHeader.setText("Doa Sesudah Makan");
 
         } else if (jenisDoa.equals("sebelum_makan")) {
             TextArti.setText("Yaa Allah, berkatilah rezeki yang engkau berikan kepada kami, dan peliharalah kami dari siksa api neraka");
             //ImageArabic.setImageResource(R.drawable.makan);
             ImgDetail.setImageResource(R.drawable.sebelum_makan);
-            sound = R.raw.doa_sebelum_makan;
+            sound = R.raw.doa_setelah_makan;
             TextArabic.setText("الَّلهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا، وَقِنَا عَذَابَ النَّارِ");
-
-        } else if (jenisDoa.equals("sesudah_wudhu")){
-            TextArti.setText("Aku bersaksi bahwa tiada Tuhan melainkan Allah dan tidak ada yang menyekutukanNya. Aku bersaksi bahwa Nabi Muhammad adalah hamba-Nya dan utusan-Nya. Ya Allah, jadikanlah aku orang yang ahli bertobat, jadikanlah aku orang yang suci, dan jadikanlah aku dari golongan orang-orang yang saleh");
-            //ImageArabic.setImageResource(R.drawable.makan);
-            ImgDetail.setImageResource(R.drawable.sesudah_wudhu);
-            sound = R.raw.doa_sebelum_makan;
-            TextArabic.setText("اَشْهَدُ اَنْ لآّاِلهَ اِلاَّاللهُ وَحْدَهُ لاَشَرِيْكَ لَهُ وَاَشْهَدُ اَنَّ مُحَمَّدًاعَبْدُهُ وَرَسُوْلُهُ. اَللهُمَّ اجْعَلْنِىْ مِنَ التَّوَّابِيْنَ وَاجْعَلْنِىْ مِنَ الْمُتَطَهِّرِيْنَ وَاجْعَلْنِىْ مِنْ ");
+            TextHeader.setText("Doa Sebelum Makan");
 
         } else if (jenisDoa.equals("sebelum_wudhu")){
-            TextArti.setText("Saya berniat wudhu’untuk membersihkan dari hadas kecil sebagai kewajiban karena perintahan Allah Yang Maha Tinggi");
+            TextArti.setText("Aku bersaksi bahwa tiada Tuhan melainkan Allah dan tidak ada yang menyekutukanNya. Aku bersaksi bahwa Nabi Muhammad adalah hamba-Nya dan utusan-Nya. Ya Allah, jadikanlah aku orang yang ahli bertobat, jadikanlah aku orang yang suci, dan jadikanlah aku dari golongan orang-orang yang saleh");
             //ImageArabic.setImageResource(R.drawable.makan);
             ImgDetail.setImageResource(R.drawable.sebelum_wudhu);
+            sound = R.raw.doa_sebelum_wudhu;
+            TextArabic.setText("اَشْهَدُ اَنْ لآّاِلهَ اِلاَّاللهُ وَحْدَهُ لاَشَرِيْكَ لَهُ وَاَشْهَدُ اَنَّ مُحَمَّدًاعَبْدُهُ وَرَسُوْلُهُ. اَللهُمَّ اجْعَلْنِىْ مِنَ التَّوَّابِيْنَ وَاجْعَلْنِىْ مِنَ الْمُتَطَهِّرِيْنَ وَاجْعَلْنِىْ مِنْ ");
+            TextHeader.setText("Doa Sebelum Wudhu");
+
+        } else if (jenisDoa.equals("setelah_wudhu")){
+            TextArti.setText("Saya berniat wudhu’untuk membersihkan dari hadas kecil sebagai kewajiban karena perintahan Allah Yang Maha Tinggi");
+            //ImageArabic.setImageResource(R.drawable.makan);
+            ImgDetail.setImageResource(R.drawable.sesudah_wudhu);
             sound = R.raw.doa_setelah_wudhu;
-            TextArabic.setText("اَشْهَدُ اَنْ لآّاِلهَ اِلاَّاللهُ وَحْدَهُ لاَشَرِيْكَ لَهُ وَاَشْهَدُ اَنَّ مُحَمَّدًاعَبْدُهُ وَرَسُوْلُهُ. اَللهُمَّ اجْعَلْنِىْ مِنَ التَّوَّابِيْنَ وَاجْعَلْنِىْ مِنَ الْمُتَطَهِّرِيْنَ وَاجْعَلْنِىْ مِنْ  \n" +
-                    "عِبَادِكَ الصَّالِحِيْنَ\n");
+            TextArabic.setText("اَشْهَدُ اَنْ لآّاِلهَ اِلاَّاللهُ وَحْدَهُ لاَشَرِيْكَ لَهُ وَاَشْهَدُ اَنَّ مُحَمَّدًاعَبْدُهُ وَرَسُوْلُهُ. اَللهُمَّ اجْعَلْنِىْ مِنَ التَّوَّابِيْنَ وَاجْعَلْنِىْ مِنَ الْمُتَطَهِّرِيْنَ وَاجْعَلْنِىْ مِنْ  ");
+            TextHeader.setText("Doa Setelah Makan");
 
         } else if (jenisDoa.equals("sesudah_tidur")){
             TextArti.setText("Segala puji bagi Allah yang menghidupkan aku kembali setelah mematikan aku dan kepada Allah akan bangkit");
@@ -84,6 +89,7 @@ public class DoaDetailActivity extends AppCompatActivity {
             ImgDetail.setImageResource(R.drawable.sesudah_tidur);
             sound = R.raw.doa_setelah_tidur;
             TextArabic.setText("اَلْحَمْدُ ِللهِ الَّذِى أَحْيَانَا بَعْدَمَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ");
+            TextHeader.setText("Doa Sesudah Tidur");
 
         } else if (jenisDoa.equals("sebelum_tidur")){
             TextArti.setText("Dengan nama-Mu ya Allah aku hidup dan mati");
@@ -91,18 +97,21 @@ public class DoaDetailActivity extends AppCompatActivity {
             ImgDetail.setImageResource(R.drawable.sebelum_tidur);
             sound = R.raw.doa_sebelum_tidur;
             TextArabic.setText("بِاسْمِكَ اللّهُمَّ أَحْيَاوَأَمُوتُ");
+            TextHeader.setText("Doa Sebelum Tidur");
 
         }else if (jenisDoa.equals("keluar_rumah")){
             TextArti.setText("Dengan menyebut nama Allah, aku menyerahkan diriku pada Allah dan tidak ada daya dan kekuatan selain dengan Allah saja");
             //ImageArabic.setImageResource(R.drawable.makan);
-            sound = R.raw.doa_masuk_rumah;
+            sound = R.raw.doa_keluar_rumah;
             TextArabic.setText("بِسْمِ اللَّهِ ، تَوَكَّلْتُ عَلَى اللَّهِ ، وَلا حَوْلَ وَلا قُوَّةَ إِلاَّ بِاللَّه");
+            TextHeader.setText("Doa Keluar Rumah");
 
         }else if (jenisDoa.equals("masuk_rumah")) {
             TextArti.setText("Dengan nama Allah kami masuk rumah, dengan nama Allah aku keluar rumah, serta kepada-Nya aku berserah diri");
             //ImageArabic.setImageResource(R.drawable.makan);
-            sound = R.raw.doa_keluar_rumah;
+            sound = R.raw.doa_masuk_rumah;
             TextArabic.setText("بِسْمِ اللهِ وَلَجْنَا وَبِسْمِ اللهِ خَرَجْنَا ، وَعَلَى اللهِ رَبَّنَا تَوَكَّلْنَا");
+            TextHeader.setText("Doa Masuk Rumah");
         }
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
@@ -131,6 +140,7 @@ public class DoaDetailActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
         finish();
     }
 }
