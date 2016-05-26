@@ -38,7 +38,7 @@ public class SettingAlarm extends AppCompatActivity {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                         time.setText(hourOfDay + ";" + minute);
-                        timeSave.edit().putString("timeBungkus", hourOfDay + ";" + minute).apply();
+                        timeSave.edit().putString("timeBungkus", hourOfDay + "." + minute).apply();
                     }
                 },hour, minute, true);
                 timePicker.show();

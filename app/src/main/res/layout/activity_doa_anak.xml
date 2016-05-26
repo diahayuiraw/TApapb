@@ -248,7 +248,7 @@
                         android:id="@+id/text_2"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="Doa Setelah Tidur"
+                        android:text="Doa Masuk Rumah"
                         android:textAlignment="center"/>
                 </LinearLayout>
             </LinearLayout>

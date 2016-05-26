@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnDoa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "doa anak", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Doa Anak", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, DoaAnakActivity.class));
             }
         });
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btnPanduan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "panduan", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Panduan", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, PanduanActivity.class));
             }
         });

@@ -24,7 +24,8 @@
             android:layout_height="wrap_content"
             android:text="Doa Harian Anak"
             android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:typeface= "sans"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:src="@drawable/play"
+            android:src="@drawable/setting"
             android:layout_marginRight="16dp"
             android:id="@+id/btn_Setting"
 
